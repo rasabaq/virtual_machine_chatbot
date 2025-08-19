@@ -2,5 +2,7 @@ discord.py
 python-dotenv
 langchain
 langchain-google-genai
+langchain-community
 faiss-cpu
+
 pydantic
