@@ -1,0 +1,6 @@
+discord.py
+python-dotenv
+langchain
+langchain-google-genai
+faiss-cpu
+pydantic
