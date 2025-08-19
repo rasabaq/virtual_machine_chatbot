@@ -255,6 +255,7 @@ resumen debe contener un máximo de 200 palabras.
 ANEXO 6: ACTA DE CALIFICACIÓN DE LA MEMORIA DE TÍTULO  
 El acta de calificación de la memoria de titulo esta entregada en el formato que se encuentra en el anexo del 
 Procedimiento Memoria de Titulo, esta entregará tu nota y su respectivo concepto. 
+Se puede realizar la práctica profesional con la memoria de titulo en paralelo pero no puede defender su titulo sino se aprueba la práctica. Esto implica el informe, la evaluación del supervisor y la aprobación por parte del coordinador de practicaSe puede realizar la práctica profesional con la memoria de titulo en paralelo pero no puede defender su titulo sino se aprueba la práctica. Esto implica el informe, la evaluación del supervisor y la aprobación por parte del coordinador de practica
 
 Cada profesor guía para la memoria de titulo cuenta con un tema o linea de investigación, estos son:
 1. Jorge Jimenez: Gestión de la calidad del aire, Tecnologías y sistemas de control de emisiones atmosféricas, Emisiones atmosféricas en el sector productivo, Leña y tecnologías de combustión de biomasa en el sector residencial, Sustentabilidad de los desarrollos energéticos, Proyectos energéticos y medioambiente
@@ -274,6 +275,7 @@ Cada profesor guía para la memoria de titulo cuenta con un tema o linea de inve
 15. Hernaldo Reinoso: Optimización, Estadística aplicadas
 16. Eduardo Salazar: Gestión de operaciones y optimización de procesos productivos. Simulación de sistemas de producción. Planificación, programación y control de sistemas de producción.
 17. Angela Zenteno: Economía, Emociones en el trabajo: Impacto de la expresión y no expresión de emociones en el trabajo, en términos del logro de objetivos y las relaciones interpesonales. Bienestar y felicidad en el trabajo: Impacto de la percepción de bienestar y felicidad de las personas en el trabajo. Específicamente en el compromiso, salud y procesos de innovación. Emociones en el trabajo. Bienestar y felicidad en el trabajo. Clima laboral.
+
 
 
 
