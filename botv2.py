@@ -7,8 +7,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.schema import BaseOutputParser
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.document_loaders import TextLoader
-from langchain.vectorstores import FAISS
+from langchain_community.document_loaders import TextLoader
+from langchain_community.vectorstores import FAISS
 from langchain.chains import LLMChain
 from pydantic import BaseModel
 import xml.etree.ElementTree as ET
@@ -263,4 +263,5 @@ async def on_message(message):
         await message.channel.send(f"❌ Error: {str(e)}")
 
 if __name__ == "__main__":
+
     bot.run(TOKEN_KEY)
