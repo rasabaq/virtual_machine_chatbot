@@ -256,4 +256,40 @@ ANEXO 6: ACTA DE CALIFICACIÓN DE LA MEMORIA DE TÍTULO
 El acta de calificación de la memoria de titulo esta entregada en el formato que se encuentra en el anexo del 
 Procedimiento Memoria de Titulo, esta entregará tu nota y su respectivo concepto. 
 
+Cada profesor guía para la memoria de titulo cuenta con un tema o linea de investigación, estos son:
+1. Jorge Jimenez: Gestión de la calidad del aire, Tecnologías y sistemas de control de emisiones atmosféricas, Emisiones atmosféricas en el sector productivo, Leña y tecnologías de combustión de biomasa en el sector residencial, Sustentabilidad de los desarrollos energéticos, Proyectos energéticos y medioambiente
+2. Carlos Contreras: Investigación de Operaciones, Optimización combinatoria, Algoritmos evolutivos, Generación automática de algoritmos
+3. Alejandro Andalaft: Diagnósticos organizacionales en empresas del sector forestal
+Evaluación de proyectos, con énfasis en sectores químico y forestal
+Inteligencia de negocios
+Gestión de instituciones de educación superior
+4. Sebastian Astroza:Modelos de elección discreta
+Econometría espacial
+Sistemas econométricos discretos continuos
+Modelos de datos heterogéneos generalizados
+Comportamiento del consumidor
+Modelos de demanda de viaje
+Participación de la actividad y uso del tiempo
+Redes sociales y TIC´s
+5. Pablo Catalán: Políticas Públicas, Ciencia, Tecnología e Innovación
+Gestión de la Innovación
+6. Juan Carlos Caro: Early Childhood Development, Economics, Health Policy, Food Policy
+7. José Oliveros: Gestión de Proyectos
+Alianzas Público Privadas
+Gestión del Valor
+8. Carlos Navarrete: Computational Social Science
+Large Language Models
+Economic Geography
+9. Magdalena Jensen: Impactos del Cambio Climático
+Sistemas alimentarios – Seguridad alimentaria
+Sustentabilidad y Resiliencia
+10.Cristian Mardones
+11.Jorge Maluenda
+12. Rosa Medina:
+13. Marcela Parada:
+14. Lorena Pradenas:
+15. Hernaldo Reinoso
+16. Eduardo Salazar
+17. Angela Zenteno:
+
 Este documento lo escribió Juan Pérez
