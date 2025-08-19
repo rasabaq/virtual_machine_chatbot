@@ -259,37 +259,21 @@ Procedimiento Memoria de Titulo, esta entregará tu nota y su respectivo concept
 Cada profesor guía para la memoria de titulo cuenta con un tema o linea de investigación, estos son:
 1. Jorge Jimenez: Gestión de la calidad del aire, Tecnologías y sistemas de control de emisiones atmosféricas, Emisiones atmosféricas en el sector productivo, Leña y tecnologías de combustión de biomasa en el sector residencial, Sustentabilidad de los desarrollos energéticos, Proyectos energéticos y medioambiente
 2. Carlos Contreras: Investigación de Operaciones, Optimización combinatoria, Algoritmos evolutivos, Generación automática de algoritmos
-3. Alejandro Andalaft: Diagnósticos organizacionales en empresas del sector forestal
-Evaluación de proyectos, con énfasis en sectores químico y forestal
-Inteligencia de negocios
-Gestión de instituciones de educación superior
-4. Sebastian Astroza:Modelos de elección discreta
-Econometría espacial
-Sistemas econométricos discretos continuos
-Modelos de datos heterogéneos generalizados
-Comportamiento del consumidor
-Modelos de demanda de viaje
-Participación de la actividad y uso del tiempo
-Redes sociales y TIC´s
-5. Pablo Catalán: Políticas Públicas, Ciencia, Tecnología e Innovación
-Gestión de la Innovación
+3. Alejandro Andalaft: Diagnósticos organizacionales en empresas del sector forestal, Evaluación de proyectos, con énfasis en sectores químico y forestal. Inteligencia de negocios, Gestión de instituciones de educación superior
+4. Sebastian Astroza:Modelos de elección discreta, Econometría espacial, Sistemas econométricos discretos continuos, Modelos de datos heterogéneos generalizados, Comportamiento del consumidor, Modelos de demanda de viaje, Participación de la actividad y uso del tiempo, Redes sociales y TIC´s
+5. Pablo Catalán: Políticas Públicas, Ciencia, Tecnología e Innovación, Gestión de la Innovación
 6. Juan Carlos Caro: Early Childhood Development, Economics, Health Policy, Food Policy
-7. José Oliveros: Gestión de Proyectos
-Alianzas Público Privadas
-Gestión del Valor
-8. Carlos Navarrete: Computational Social Science
-Large Language Models
-Economic Geography
-9. Magdalena Jensen: Impactos del Cambio Climático
-Sistemas alimentarios – Seguridad alimentaria
-Sustentabilidad y Resiliencia
-10.Cristian Mardones
-11.Jorge Maluenda
-12. Rosa Medina:
-13. Marcela Parada:
-14. Lorena Pradenas:
-15. Hernaldo Reinoso
-16. Eduardo Salazar
-17. Angela Zenteno:
+7. José Oliveros: Gestión de Proyectos, Alianzas Público Privadas, Gestión del Valor
+8. Carlos Navarrete: Computational Social Science, Large Language Models, Economic Geography
+9. Magdalena Jensen: Impactos del Cambio Climático, Sistemas alimentarios – Seguridad alimentaria, Sustentabilidad y Resiliencia
+10.Cristian Mardones: Economía Ambiental y Desarrollo Económico Sustentable, Evaluación Ex – Post de Políticas Públicas, Modelación Económica Computacional
+11.Jorge Maluenda: Variables psicológicas y sociales involucradas en la motivación, El desempeño y el aprendizaje de personas y organizaciones.
+12. Rosa Medina: Optimización Combinatoria
+13. Marcela Parada: Microeconomía aplicada, Economía laboral, Economía de riesgo e incertidumbre, Economía de la salud
+14. Lorena Pradenas: Ingeniería de la Producción, Optimización, Investigación de Operaciones, Logística, Gestión de Cadenas de Abastecimiento
+15. Hernaldo Reinoso: Optimización, Estadística aplicadas
+16. Eduardo Salazar: Gestión de operaciones y optimización de procesos productivos. Simulación de sistemas de producción. Planificación, programación y control de sistemas de producción.
+17. Angela Zenteno: Economía., Emociones en el trabajo: Impacto de la expresión y no expresión de emociones en el trabajo, en términos del logro de objetivos y las relaciones interpesonales. Bienestar y felicidad en el trabajo: Impacto de la percepción de bienestar y felicidad de las personas en el trabajo. Específicamente en el compromiso, salud y procesos de innovación. Emociones en el trabajo. Bienestar y felicidad en el trabajo. Clima laboral.
 
-Este documento lo escribió Juan Pérez
+
+
