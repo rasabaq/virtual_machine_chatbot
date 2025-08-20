@@ -164,7 +164,7 @@ Intrucciones:
 - Responde solo preguntas que este relacionadas al topico en el que eres experto
 
 
-Responde de manera clara y detallada la siguiente pregunta:
+Responde de manera clara y breve la siguiente pregunta:
 {question}
 
 """
@@ -181,7 +181,7 @@ Instrucciones:
 - Desarrolla pensamiento paso a paso
 - Responde solo preguntas que este relacionadas al topico en el que eres experto
 
-Responde de manera clara y detalla la siguiente pregunta:
+Responde de manera clara y de manera breve la siguiente pregunta:
 {question}
 
 """
@@ -265,3 +265,4 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
