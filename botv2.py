@@ -165,7 +165,7 @@ Intrucciones:
 - Analiza la pregunta cuidadosamente
 - Desarrolla pensamiento paso a paso
 - Responde solo preguntas que este relacionadas al topico en el que eres experto
-- La respuesta en caso de ser mayor a 200 palabras busca resumirla
+- La respuesta no puede ser mayor a 2000 caracteres, en caso de ser mayor debes resumirla
 
 
 Responde de manera clara y breve la siguiente pregunta:
@@ -184,7 +184,7 @@ Instrucciones:
 - Analiza la pregunta cuidadosa mente
 - Desarrolla pensamiento paso a paso
 - Responde solo preguntas que este relacionadas al topico en el que eres experto
-- La respuesta en caso de ser mayor a 200 palabras busca resumirla
+- La respuesta no puede ser mayor a 2000 caracteres, en caso de ser mayor debes resumirla
 
 Responde de manera clara y de manera breve la siguiente pregunta:
 {question}
@@ -274,6 +274,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
