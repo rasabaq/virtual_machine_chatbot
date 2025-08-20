@@ -216,7 +216,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
 
     def process_question(self, question: str) -> Dict[str, Any]:
         logger.info(f"Procesando pregunta: {question}")
-        classification_result = self.classification_chain.run(question=question)
+        classification_result = self.classification_chain.invoke({"question"} =question)
 
         logger.info(f"Clasificación: {classification_result.topic} (confianza: {classification_result.confidence})")
 
@@ -251,7 +251,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
         }
 
 
-system = MultiModelSystem(vectorstorePP=vectorstorePP,vectorstoreMM=vectorstoreMM)
+system = MultiModelSystem(vectorstoreMM=vectorstoreMM, vectorstorePP=vectorstorePP)
 MAX_DISCORD_CHARS = 2000
 
 @bot.event
@@ -272,6 +272,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
