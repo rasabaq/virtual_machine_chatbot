@@ -86,21 +86,21 @@ class MultiModelSystem:
             model="gemini-2.0-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.1, # Baja temperatura para clasificación precisa
-            max_tokens=500 
+            max_output_tokens=500  
         )
         
         self.mm_model = ChatGoogleGenerativeAI(
             model="gemini-2.0-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.7,
-            max_tokens=500 
+            max_output_tokens=500  
         )
         
         self.mp_model = ChatGoogleGenerativeAI(
             model="gemini-2.0-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.7, 
-            max_tokens=500 
+            max_output_tokens=500 
         )
         
         # Configurar parser
@@ -252,15 +252,19 @@ Responde de manera clara y de manera breve la siguiente pregunta:
 
 
 system = MultiModelSystem(vectorstorePP=vectorstorePP,vectorstoreMM=vectorstoreMM)
+max_dc = 2000
 
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
         return  # Evita que el bot se responda a sí mismo
-
     try:
         result = system.process_question(message.content)
         response = result['response']
+        
+        if len(response) > max_dc:
+            response = response[:max_dc - 3] + "..."
+        
         await message.channel.send(f"📘 Respuesta:\n{response}")
     except Exception as e:
         await message.channel.send(f"❌ Error: {str(e)}")
@@ -268,5 +272,6 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
