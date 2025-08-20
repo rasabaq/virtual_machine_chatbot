@@ -252,7 +252,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
 
 
 system = MultiModelSystem(vectorstorePP=vectorstorePP,vectorstoreMM=vectorstoreMM)
-max_dc = 2000
+MAX_DISCORD_CHARS = 2000
 
 @bot.event
 async def on_message(message):
@@ -262,8 +262,8 @@ async def on_message(message):
         result = system.process_question(message.content)
         response = result['response']
         
-        if len(response) > max_dc:
-            response = response[:max_dc - 3] + "..."
+        if len(response) > MAX_DISCORD_CHARS:
+            response = response[:MAX_DISCORD_CHARS - 3] + "..."
         
         await message.channel.send(f"📘 Respuesta:\n{response}")
     except Exception as e:
@@ -272,6 +272,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
