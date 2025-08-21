@@ -16,6 +16,9 @@ import logging
 from langchain.chains import RetrievalQA
 import discord
 from discord.ext import commands
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import ConversationChain
+
 
 load_dotenv()  
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -29,6 +32,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 
 class ClassificationResult(BaseModel):
     """Modelo para el resultado de clasificación"""
@@ -78,10 +82,18 @@ vectorstorePP = FAISS.from_documents(docpp, embedding)
 class MultiModelSystem:
     """Sistema principal multimodelo con LangChain"""
     
-    def __init__(self, vectorstoreMM, vectorstorePP):
+    def __init__(self, llm, vectorstoreMM=None , vectorstorePP=None):
+
+        self.llm = llm
         self.mm_vectorstore = vectorstoreMM
         self.mp_vectorstore = vectorstorePP
         # Crear todos los modelos con Gemini
+        self.memory = ConversationBufferMemory(return_messages=True)
+        self.conversation = ConversationChain(
+            llm=self.llm,
+            memory=self.memory,
+            verbose=True
+        )
         self.classifier_model = ChatGoogleGenerativeAI(
             model="gemini-2.0-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
@@ -106,6 +118,7 @@ class MultiModelSystem:
         # Configurar parser
         self.classification_parser = XMLClassificationParser()
         self._setup_chains()
+    
     
     def _setup_chains(self):
         """Configurar las chains de LangChain"""
@@ -230,6 +243,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
             model_used = "internship model"
         elif classification_result.topic == "conversation":
             specialized_response = self.conversations.run(question)
+            specialized_response = self.conversations.predict(input=question)
             model_used = "conversation model"
         else:
             specialized_response = "Lo siento, esta pregunta no está en mi rango de respuestas."
@@ -252,7 +266,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
         }
 
 
-system = MultiModelSystem( vectorstorePP=vectorstorePP, vectorstoreMM=vectorstoreMM)
+system = MultiModelSystem(llm=llm, vectorstorePP=vectorstorePP, vectorstoreMM=vectorstoreMM)
 max_dc_chars = 2000
 
 @bot.event
@@ -262,7 +276,7 @@ async def on_message(message):
     try:
         result = system.process_question(message.content)
         response = result['response']
-        print(len(response))
+        
         await message.channel.send(f"📘 Respuesta:\n{response[0:1980]}")
        
     except Exception as e:
