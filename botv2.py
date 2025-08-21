@@ -277,7 +277,7 @@ async def on_message(message):
         result = system.process_question(message.content)
         response = result['response']
         
-        await message.channel.send(f"📘 Respuesta:\n{response[0:1980]}")
+        await message.channel.send(f"📘 Respuesta:\n{response}")
        
     except Exception as e:
         await message.channel.send(f"❌ Error: {str(e)}")
@@ -285,6 +285,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
