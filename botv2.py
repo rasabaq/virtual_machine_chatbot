@@ -218,7 +218,7 @@ Responde de manera clara y de manera breve la siguiente pregunta:
 
     def process_question(self, question: str) -> Dict[str, Any]:
         logger.info(f"Procesando pregunta: {question}")
-        classification_result = self.classification_chain.invoke({"question"} =question)
+        classification_result = self.classification_chain.invoke({"question"}:question)
 
         logger.info(f"Clasificación: {classification_result.topic} (confianza: {classification_result.confidence})")
 
@@ -274,6 +274,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
