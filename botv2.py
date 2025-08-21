@@ -262,10 +262,6 @@ async def on_message(message):
     try:
         result = system.process_question(message.content)
         response = result['response']
-        
-        if len(response) > max_dc_chars:
-            response = response[:max_dc_chars - 3] + "..."
-        
         await message.channel.send(f"📘 Respuesta:\n{response}")
     except Exception as e:
         await message.channel.send(f"❌ Error: {str(e)}")
@@ -273,6 +269,7 @@ async def on_message(message):
 if __name__ == "__main__":
 
     bot.run(TOKEN_KEY)
+
 
 
 
