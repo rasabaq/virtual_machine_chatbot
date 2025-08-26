@@ -59,6 +59,7 @@ agent = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_A
 
 FORMAT_INSTRUCTIONS = (
     "Sigue este formato ESTRICTO (sin bloques de código):\n"
+    "Thought: tu razonamiento breve\n"
     "Action: <nombre_de_la_herramienta>\n"
     "Action Input: {\"query\": \"...\"}\n"
     "## tras cada Observation puedes iterar con otro Thought/Action/Action Input ##\n"
@@ -124,4 +125,5 @@ async def on_message(message: discord.Message):
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
     bot.run(TOKEN_KEY)
+
 
