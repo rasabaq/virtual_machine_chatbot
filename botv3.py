@@ -25,8 +25,8 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-loader1 = TextLoader("data/memoriatitulo.txt", encoding="utf-8")
-loader2 = TextLoader("data/practicaprofesional.txt", encoding="utf-8")
+loader1 = TextLoader("memoriatitulo.txt", encoding="utf-8")
+loader2 = TextLoader("practicaprofesional.txt", encoding="utf-8")
 docmm = loader1.load()
 docpp = loader2.load()
 
@@ -123,3 +123,4 @@ async def on_message(message: discord.Message):
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
     bot.run(TOKEN_KEY)
+
