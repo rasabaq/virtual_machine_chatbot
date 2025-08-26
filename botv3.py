@@ -116,12 +116,12 @@ async def on_message(message: discord.Message):
         # Llama al agente (asíncrono)
         res = await agent_executor.ainvoke({"input": user_text})
         output = res.get("output", "").strip() or "No pude generar una respuesta."
-        
-        if len(output) <= 2000 - len("📘 Respuesta:\n")
-            await message.channel.send(f"📘 Respuesta:\n{output}")
+        prefix = "📘 Respuesta:\n"
+        if len(output) <= 2000 - len(prefix):
+            await message.channel.send(prefix + output)
         else:
-            await message.channel.send(prefix + output[:2000 - len("📘 Respuesta:\n")])
-            for i in range(2000 - len("📘 Respuesta:\n"), len(output), 2000):
+            await message.channel.send(prefix + output[:2000 - len(prefix)])
+            for i in range(2000 - len(prefix), len(output), 2000):
                 await message.channel.send(output[i:i+2000])
     except Exception as e:
         logger.exception("Error procesando el mensaje")
@@ -132,7 +132,8 @@ async def on_message(message: discord.Message):
 
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
-    bot.run(TOKEN_KEY)
+
+
 
 
 
