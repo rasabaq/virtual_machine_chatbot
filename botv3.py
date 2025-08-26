@@ -69,6 +69,8 @@ FORMAT_INSTRUCTIONS = (
 prompt = ChatPromptTemplate.from_messages([
     ("system",
      "Eres un agente ReAct para Ingeniería Civil Industrial UdeC.\n"
+     "Cuando entregues la respuesta final, no debe superar 1800 caracteres. "
+     "Resume si es necesario.\n"
      "Tienes acceso a estas herramientas:\n{tools}\n\n"
      "Sólo puedes usar estas herramientas por nombre: {tool_names}.\n"
      "Si la consulta es small talk (saludos/despedidas), responde breve sin usar herramientas.\n"
@@ -114,7 +116,13 @@ async def on_message(message: discord.Message):
         # Llama al agente (asíncrono)
         res = await agent_executor.ainvoke({"input": user_text})
         output = res.get("output", "").strip() or "No pude generar una respuesta."
-        await message.channel.send(f"📘 Respuesta:\n{output}")
+        
+        if len(output) <= 2000 - len("📘 Respuesta:\n")
+            await message.channel.send(f"📘 Respuesta:\n{output}")
+        else:
+            await message.channel.send(prefix + output[:2000 - len("📘 Respuesta:\n")])
+            for i in range(2000 - len("📘 Respuesta:\n"), len(output), 2000):
+                await message.channel.send(output[i:i+2000])
     except Exception as e:
         logger.exception("Error procesando el mensaje")
         await message.channel.send(f"❌ Error: {e}")
@@ -125,5 +133,6 @@ async def on_message(message: discord.Message):
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
     bot.run(TOKEN_KEY)
+
 
 
