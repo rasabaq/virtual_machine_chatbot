@@ -4,7 +4,7 @@ load_dotenv()
 
 import discord
 from discord.ext import commands
-
+from langchain.memory import ConversationBufferMemory
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
@@ -30,6 +30,7 @@ loader2 = TextLoader("practicaprofesional.txt", encoding="utf-8")
 docmm = loader1.load()
 docpp = loader2.load()
 
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 emb = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
 vectorMM = FAISS.from_documents(docmm, emb)
 vectorPP = FAISS.from_documents(docpp, emb)
@@ -75,6 +76,7 @@ prompt = ChatPromptTemplate.from_messages([
      "{format_instructions}\n"
      "IMPORTANTE: No uses bloques de código ni ```tool_code``` para llamar herramientas."
     ),
+    MessagesPlaceholder(variable_name="chat_history"),
     ("human", "{input}"),
     ("assistant", "{agent_scratchpad}"),   
 ]).partial(
@@ -84,7 +86,7 @@ prompt = ChatPromptTemplate.from_messages([
 )
 
 react_agent = create_react_agent(agent, tools, prompt)
-agent_executor = AgentExecutor(agent=react_agent, tools=tools, verbose=True, handle_parsing_errors=True)
+agent_executor = AgentExecutor(agent=react_agent, tools=tools,memory=memory, verbose=True, handle_parsing_errors=True)
 
 # --- Discord events ---
 @bot.event
@@ -123,4 +125,3 @@ async def on_message(message: discord.Message):
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
     bot.run(TOKEN_KEY)
-
