@@ -55,7 +55,7 @@ tool_internship = Tool(
 
 tools = [tool_thesis, tool_internship]
 
-agent = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY, temperature=0.2)
+agent = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY, temperature=0.7)
 
 FORMAT_INSTRUCTIONS = (
     "Sigue este formato ESTRICTO (sin bloques de código):\n"
@@ -74,7 +74,7 @@ prompt = ChatPromptTemplate.from_messages([
      "Tienes acceso a estas herramientas:\n{tools}\n\n"
      "Sólo puedes usar estas herramientas por nombre: {tool_names}.\n"
      "Si la consulta es small talk (saludos/despedidas), responde breve sin usar herramientas.\n"
-     "No inventes; si falta info, dilo. Finaliza preguntando en qué puedes ayudar.\n\n"
+     "No inventes; si falta info, dilo. Finaliza preguntando en qué puedes ayudar de manera coordial.\n\n"
      "{format_instructions}\n"
      "IMPORTANTE: No uses bloques de código ni ```tool_code``` para llamar herramientas."
     ),
@@ -132,6 +132,7 @@ async def on_message(message: discord.Message):
 
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
+
 
 
 
