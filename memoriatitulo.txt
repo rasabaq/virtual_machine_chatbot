@@ -116,8 +116,7 @@ iii. Resultados iv. Conclusiones
 26. Finalizada la presentación, la Comisión Revisora procederá a calificar de inmediato la Memoria de Título.  
 27. El Jefe de Carrera emitirá un acta de calificación en la que consignará el nombre del estudiante y del tema, la 
 calificación final de la asignatura y los nombres de la Comisión Revisora, según formato de Anexo 6. Esta acta, 
-f
- irmada por todos los miembros de la Comisión, será remitida por el Jefe de Carrera a Secretaría Académica.  
+firmada por todos los miembros de la Comisión, será remitida por el Jefe de Carrera a Secretaría Académica.  
 E. Calificación de la Memoria de Título  
 28. La Memoria de Título será calificada ponderando los siguientes factores:  
 a. Desempeño del Estudiante (30%)  
@@ -257,6 +256,10 @@ El acta de calificación de la memoria de titulo esta entregada en el formato qu
 Procedimiento Memoria de Titulo, esta entregará tu nota y su respectivo concepto. 
 Se puede realizar la práctica profesional con la memoria de titulo en paralelo pero no puede defender su titulo sino se aprueba la práctica. Esto implica el informe, la evaluación del supervisor y la aprobación por parte del coordinador de practicaSe puede realizar la práctica profesional con la memoria de titulo en paralelo pero no puede defender su titulo sino se aprueba la práctica. Esto implica el informe, la evaluación del supervisor y la aprobación por parte del coordinador de practica
 
+SITUACIONES ESPECIALES
+Frente a un caso de acoso sexual o laboral con profesor guia, dirigirse al jefe de carrera o al Dirección de Equidad de Género y Diversidad Sexual (DEGYD)
+Se puede realizar la práctica profesional con la memoria de titulo en paralelo pero no puede defender su titulo sino se aprueba la práctica. Esto implica el informe, la evaluación del supervisor y la aprobación por parte del coordinador de practica.
+
 Cada profesor guía para la memoria de titulo cuenta con un tema o linea de investigación, estos son:
 1. Jorge Jimenez: Gestión de la calidad del aire, Tecnologías y sistemas de control de emisiones atmosféricas, Emisiones atmosféricas en el sector productivo, Leña y tecnologías de combustión de biomasa en el sector residencial, Sustentabilidad de los desarrollos energéticos, Proyectos energéticos y medioambiente
 2. Carlos Contreras: Investigación de Operaciones, Optimización combinatoria, Algoritmos evolutivos, Generación automática de algoritmos
@@ -275,6 +278,7 @@ Cada profesor guía para la memoria de titulo cuenta con un tema o linea de inve
 15. Hernaldo Reinoso: Optimización, Estadística aplicadas
 16. Eduardo Salazar: Gestión de operaciones y optimización de procesos productivos. Simulación de sistemas de producción. Planificación, programación y control de sistemas de producción.
 17. Angela Zenteno: Economía, Emociones en el trabajo: Impacto de la expresión y no expresión de emociones en el trabajo, en términos del logro de objetivos y las relaciones interpesonales. Bienestar y felicidad en el trabajo: Impacto de la percepción de bienestar y felicidad de las personas en el trabajo. Específicamente en el compromiso, salud y procesos de innovación. Emociones en el trabajo. Bienestar y felicidad en el trabajo. Clima laboral.
+
 
 
 
