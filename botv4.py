@@ -75,7 +75,7 @@ prompt = ChatPromptTemplate.from_messages([
      "NUNCA muestres ni cites nada dentro de <think>...</think>.\n\n"
      "Tienes acceso a estas herramientas:\n{tools}\n\n"
      "Sólo puedes usar estas herramientas por nombre: {tool_names}.\n"
-     "Si la respuesta NO se puede responder con herramientas por nombre: {tool_names}, di que no estas capacitado para responder .\n"
+     "Si la respuesta NO se puede responder con las herramientas: {tool_names}, responde que no estas capacitado para entregar esa respuesta.\n"
      "Si la consulta es small talk (saludos/despedidas), responde breve y cordial sin usar herramientas.\n"
      "No inventes; si falta info, dilo. Finaliza preguntando en qué puedes ayudar.\n\n"
      "{format_instructions}\n"
@@ -161,6 +161,7 @@ async def on_message(message: discord.Message):
 # --------------------------------------------------------------------------------------
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
+
 
 
 
