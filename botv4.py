@@ -70,13 +70,14 @@ prompt = ChatPromptTemplate.from_messages([
     ("system",
      "Eres un agente ReAct para Ingeniería Civil Industrial UdeC.\n"
      "Cuando entregues la respuesta final, no debe superar 1800 caracteres. "
-    "Responde siempre de manera **detallada y cordial**, considerando lo necesario para la tarea.\n"
+     "Responde siempre de manera **detallada y cordial**, considerando lo necesario para la tarea.\n"
      "Piensa paso a paso DENTRO de <think>...</think> como tu scratchpad privado.\n"
      "NUNCA muestres ni cites nada dentro de <think>...</think>.\n\n"
      "Tienes acceso a estas herramientas:\n{tools}\n\n"
      "Sólo puedes usar estas herramientas por nombre: {tool_names}.\n"
-     "Si la consulta es small talk (saludos/despedidas), responde breve sin usar herramientas.\n"
-     "No inventes; si falta info, dilo. Finaliza preguntando en qué puedes ayudar de manera coordial.\n\n"
+     "Si la respuesta NO se puede responder con herramientas por nombre: {tool_names}, di que no estas capacitado para responder .\n"
+     "Si la consulta es small talk (saludos/despedidas), responde breve y cordial sin usar herramientas.\n"
+     "No inventes; si falta info, dilo. Finaliza preguntando en qué puedes ayudar.\n\n"
      "{format_instructions}\n"
      "IMPORTANTE: No uses bloques de código ni ```tool_code``` para llamar herramientas."
     ),
@@ -160,6 +161,7 @@ async def on_message(message: discord.Message):
 # --------------------------------------------------------------------------------------
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
+
 
 
 
