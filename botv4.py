@@ -74,7 +74,7 @@ prompt = ChatPromptTemplate.from_messages([
      "Piensa paso a paso DENTRO de <think>...</think> como tu scratchpad privado.\n"
      "NUNCA muestres ni cites nada dentro de <think>...</think>.\n\n"
      "Tienes acceso a estas herramientas:\n{tools}\n\n"
-     "SOLO puedes responder usando las herramientas disponibles ({tool_names}).\n"
+     "Debes responder usando las herramientas disponibles ({tool_names}).\n"
      "Si la pregunta no se relaciona con estos reglamentos o no puede ser respondida con esas herramientas, "
      "debes contestar EXACTAMENTE con la frase:\n"
      "\"Lo siento, no estoy capacitado para responder preguntas fuera del ámbito de la memoria de título y la práctica profesional.\" \n\n"
@@ -163,6 +163,7 @@ async def on_message(message: discord.Message):
 # --------------------------------------------------------------------------------------
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
+
 
 
 
