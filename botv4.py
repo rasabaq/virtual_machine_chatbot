@@ -35,8 +35,8 @@ emb = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=
 vectorMM = FAISS.from_documents(docmm, emb)
 vectorPP = FAISS.from_documents(docpp, emb)
 
-llm_thesis = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key= GOOGLE_API_KEY, temperature=0.6)
-llm_internship = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key= GOOGLE_API_KEY, temperature=0.6)
+llm_thesis = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key= GOOGLE_API_KEY, temperature=0.6)
+llm_internship = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key= GOOGLE_API_KEY, temperature=0.6)
 
 qa_thesis = RetrievalQA.from_chain_type(llm = llm_thesis, retriever = vectorMM.as_retriever(), chain_type = "stuff")
 qa_internship = RetrievalQA.from_chain_type(llm = llm_internship, retriever = vectorPP.as_retriever(), chain_type = "stuff")
@@ -163,6 +163,7 @@ async def on_message(message: discord.Message):
 # --------------------------------------------------------------------------------------
 if __name__ == "__main__":
     bot.run(TOKEN_KEY)
+
 
 
 
