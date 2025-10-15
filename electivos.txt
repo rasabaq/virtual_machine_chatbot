@@ -1,0 +1,256 @@
+ELECTIVOS:
+
+1. SIG aplicado a Ingeniería Industrial: 
+Asignatura básica, de carácter teórico-práctico y participativo, dirigida a estudiantes de Ingeniería Industrial, que introduce conceptos de gestión y planificación de proyectos, 
+utilizando herramientas cartográficas. Entrega conocimientos en los componentes posicional, temático, de metadatos, logística y precisión temporal. 
+Estas herramientas permitirán al Ingeniero Industrial mejorar su capacidad para tomar decisiones, mejorando su capacidad de gestión y elaboración de proyectos, a través de 
+los conocimientos de cartografía y posicionamiento de elementos. Se busca desarrollar la capacidad de elaborar logística adecuada, considerando aspectos del entorno ambiental. 
+
+2. Taller de Investigación I:
+DESCRIPCIÓN. 
+El Taller de Investigación I tiene como objetivo que el/la estudiante aplique sus capacidades y conocimientos adquiridos para formular y responder preguntas de investigación 
+dentro de cualquier línea relevante dentro de la ingeniería civil industrial. Se espera que el estudiante sea capaz de encontrar una brecha en el conocimiento y proponer 
+una metodología que permita contribuir en el estado del arte. 
+
+3.  ALGORITMOS MODERNOS PARA PRODUCCIÓN 
+
+Prácticamente todos los problemas de gestión de la producción y los servicios son siempre de difícil resolución por lo cual los métodos exactos, no entregan soluciones 
+en tiempos razonables para instancias de interés. A partir de la década del 90 se proponen diversas técnicas modernas de resolución de problemas de este tipo, tales 
+técnicas son denominadas metaheurística, las cuales encuentran soluciones cercanas al óptimo. En este curso se pretende capacitar en el uso de estas técnicas 
+y presentar diversas aplicaciones en problemas relacionados con la gestión sustentable de los recursos de todo tipo.
+CONTENIDOS
+ Introducción
+ Técnicas basadas en una solución
+ 	- Local search
+ 	- Tabu search
+ 	- GRASP
+	- ILS
+ 	- VNS
+	- LNS
+	- Simulated Annealing
+ Técnicas basadas en poblaciones
+ Algoritmos genéticos
+ Colonias de hormigas
+ Scatter search
+ Calibración de párametros, hiperheurísticas, otros
+ Desarrollo de experimento
+
+4. ASPECTOS LEGALES DE LA EMPRESA
+Proporcionar a los alumnos de Ingeniería Civil una visión del actual Régimen Económico chileno, dentro del marco constitucional y legal, con especial énfasis en los aspectos referidos al derecho de la Empresa en materias de Derecho Comercial, Económico, Tributario, Laboral y Bancario, que facilite el futuro desempeño de los alumnos de Ingeniería Civil en cargos de directores y ejecutivos de empresas.
+Contenidos: 
+I. Nociones generales de Derecho; sus fuentes y jerarquía normativa. 
+II. Bases fundamentales del Régimen Económico chileno. 
+III. Legislación Comercial y Bancaria. 
+IV. Legislación Tributaria.
+V. Legislación Laboral. 
+
+5. Gestión del bienestar y felicidad en el trabajo: Una aproximación desde la ciencia
+¿Por qué algunas personas son capaces de vivir su trabajo de manera positiva, entregando lo mejor de sí mismos y percibiendo un alto nivel de crecimiento personal, mientas que otros sufren la presión y padecen a nivel físico y emocional? La mirada científica de la Psicología Positiva nos entrega algunas claves para comenzar a responder ésta pregunta y nos invita a adoptar una nueva mirada sobre el trabajo, poniéndolo al servicio del crecimiento y florecimiento de las personas, y permitiendo al mismo tiempo un alto nivel de funcionalidad individual y colectiva para el desarrollo sostenible de las organizaciones. En este contexto, el curso Gestión de la felicidad laboral está orientado a alumnos que deseen conocer las claves que entrega la psicología positiva para aprender a gestionar el florecimiento propio y de terceros, lo que es una competencia fundamental de un profesional en cualquier ámbito, particularmente aquellos que están llamados a ocupar posiciones de liderazgo. Al finalizar el curso, los alumnos estarán familiarizados con la teoría y evidencia empírica en el ámbito del bienestar y felicidad aplicados al trabajo lo que les permitirá desarrollar estrategias para fomentar estados mentales saludables propios y de terceros en contextos laborales desde una posición como trabajador, como miembro de un quipo y como jefe de otras personas.
+
+Contenidos:
+Introducción a la Psicología Positiva 
+Modelos de felicidad aplicados al trabajo 
+Modelo PERMA: Emociones, Engagement, Relaciones Positivas, Sentido y Logro 
+
+6.  Herramientas Estadísticas y Econométricas Avanzadas 
+La asignatura proporcionará al alumno los conocimientos para desarrollar y aplicar técnicas de la teoría econométrica que permitan realizar análisis cuantitativos de algunos fenómenos económicos. Se pretende que los alumnos puedan: desarrollar y discutir los métodos econométricos adecuados para abordar cada problema; proporcionar las herramientas computacionales para la aplicación de los métodos econométricos; motivar la investigación empírica con datos propios. Esta asignatura contribuye a las siguientes competencias del perfil de graduado: Aplicar un manejo conceptual, teórico y metodológico avanzado y con sentido crítico en su disciplina. Modelar problemas combinatorios y/o complejos para proponer soluciones optimizadas y sustentables en el contexto de la Ingeniería industrial o de producción. 
+CONTENIDOS 
+- Información base para estimar un modelo matemático de relación causa efecto. 
+- Los mínimos cuadrados ordinarios y análisis de regresión lineal mútiple. 
+- Condiciones y supuestos que deben cumplir los datos para estimar un modelo de regresión lineal múltiple. 
+- Estimación de modelos. Condiciones para evaluar la calidad de la estimación. -
+- Regresión generalizada (variables dependientes múltiples continuas, heterocedasticidad u correlación entre observaciones. Dependencia temporal y espacial entre observaciones. Modelos multinivel). 
+- Variables latentes (análisis de componentes principales y factorial. Modelos de ecuaciones estructurales). 
+- Variables dependientes discretas (modelos de conteo, logísticos y ordinales. Logit Binario y Logit Multinomial. Logit Mixto. Logid Anidado). 
+
+
+7.  Intervención ergonómica y diseño para Ingenierías  
+A partir del conocimiento de las nociones fundamentales de la Ergonomía y teniendo en cuenta el carácter multidisciplinario de esta ciencia aplicada, los alumnos interesados en este 
+curso podrán avanzar hacia la profundización de temas contingentes, así como también en lo que respecta al diseño y proposición de estrategias de intervención en un terreno específico, 
+con el fin de aplicar los conocimientos adquiridos y contribuir con sus resultados al mejoramiento de procesos, sistemas de trabajo, prácticas o herramientas de soporte que 
+contribuyan a la calidad de vida laboral y a la eficiencia de la organización.  Esta asignatura contribuye en el perfil de egreso de las carreras de Ingeniería en cuanto a 
+entregar los conocimientos para trabajar en equipo, para reflexionar, diseñar y aplicar el conocimiento de sus propias profesiones al servicio de problemas reales del entorno local o 
+nacional, contribuyendo al desarrollo sostenido de las operaciones, productos y servicios que a futuro estarán a su cargo. 
+
+8. Programación Aplicada a la Ingeniería Industrial
+Asignatura teórico-práctica que entrega bases avanzadas para el uso de los computadores como herramientas de solución de problemas complejos en la Ingeniería Industrial. 
+Su objetivo es habilitar al estudiantado, al nivel requerido en la especialidad, en el uso avanzando del lenguaje de programación Python, 
+como medio de expresión de la resolución de problemas complejos y herramienta indispensable para la resolución de problemas en la Ingeniería Industrial
+Contenidos:
+ 1. Repaso de Python, eficiencia, métodos de ordenación y búsqueda.
+ 2. Orientación a objetos.
+ 3. Manejo de errores y excepciones.
+ 4. Estructuras de datos.
+ 5. Herramientas útiles.
+ 6. Aplicaciones a la Ingeniería Industrial: Optimización y aprendizaje automático y otros.
+
+
+9. Gestión de Sistemas Energéticos en la Industria
+Desde los grandes hitos de las revoluciones industriales, la energía ha cumplido un rol importante en la innovación industrial. Por su parte, el uso eficiente de la energía es crucial 
+para la competitividad y rentabilidad de las empresas. En esta asignatura tipo taller, se estudiarán casos de estudio relacionados con la gestión energética en contextos industriales tomados de la literatura científica más reciente disponible, en donde cada estudiante integrará sus conocimientos de Ingeniería Industrial adquiridos para proponer soluciones que apunten a resolverlos, así también aplicando criterios de mejora continua conforme a los estándares internacionales de gestión energética. 
+CONTENIDOS. 
+1. Breve reseña histórica de la energía en la industria. 
+2. Introducción a las tecnologías de generación energética. 
+3. Contexto energético nacional (presentación del Balance Nacional de Energía). 
+4. Sistemas de Gestión Energética (presentación de la Norma ISO 50001). 
+5. Estudios de casos.
+
+10. Planificación y Economía de Transporte 
+La asignatura introduce al alumno en el ámbito de la toma de decisiones en transporte, desde un punto de vista sistémico. Utilizando teoría clásica de la microeconomía y la teoría del 
+consumidor y de la firma, se realiza una adaptación al transporte para ilustrar y analizar políticas de planificación de transporte. Se espera que al finalizar la asignatura exitosamente los alumnos sean capaces de: 
+a) Analizar la componente económica asociada a los sistemas de transporte, desde el punto de vista de la demanda y de la oferta 
+b) Analizar y evaluar instrumentos y estrategias integradas de transporte 
+c) Evaluar el impacto de posibles políticas de transporte en diferentes escenarios de planificación, desarrollando una visión flexible en la toma de decisiones en transporte. 
+d) Comunicar adecuadamente los resultados de la evaluación y/o análisis de políticas de transporte 
+e) Evaluar desde un punto de vista ético y social las consecuencias de la toma de decisiones acerca de políticas de transporte 
+
+12. Taller de optimización
+Este curso pretende dar continuidad a la línea de métodos de optimización, estudiando algunos métodos no estudiados en los cursos de métodos I o II y aplicar en un caso práctico.
+Contenidos: 
+- Otros métodos tradicionales de optimización, para problemas de toma de decisiones de gran tamaño o reales.  
+- Optimización estocástica-dinámica revisión general. 
+- Métodos metaheurísticos para resolver problemas en la toma de decisiones de situaciones complejas o de gran tamaño: Simulated annealing; Tabú search; Algoritmos genéticos 
+- Revisión general de redes neuronales para resolver problemas en la toma de decisiones de situaciones complejas o de gran tamaño con grandes cantidades de datos. 
+- Implementación computacional. 
+- Estudio de caso  
+
+13. Administración Deportiva Profesional:
+La presente asignatura busca entregar al estudiante competencias y capacidades en el ámbito de la administración de organizaciones deportivas reconocidas por el Instituto del deporte (IND). El deporte en Chile necesita de profesionales que puedan gestionar este tipo de organizaciones, desde un club de una disciplina deportiva hasta una sociedad anónima profesional de futbol, con todo lo que implica en términos de, presupuestos, organización de eventos deportivos masivos, estudio de reglamentos, entre otros ámbitos de la administración. 
+Las actividades de la asignatura consideran el estudio de memorias financieras de organizaciones deportivas profesionales fiscalizadas por la Comisión del Mercado Financiero (CMF) y análisis de casos 
+de administración deportiva nacional y del proceso que vivió el club Deportes Concepción luego de su desafiliación del futbol profesional.  
+
+14. Cambio climático y sistemas alimentarios  
+Asignatura teórico-práctica que introduce al estudiante a los principales temas relacionados al cambio climático y los sistemas alimentarios. Se analizan aspectos relacionados a 
+políticas alimentarias, dietas saludables, alimentos sostenibles, seguridad alimentaria, además de estrategias de mitigación y adaptación al cambio climático.    
+Promueve además las competencias genéricas en contextos multidisciplinares y/o interdisciplinares, entre las que destacan: pensamiento crítico, comunicación, trabajo colaborativo, responsabilidad social. 
+contenidos:
+1- Cambio climatico  - 
+- introducción al cambio climático 
+- escenarios y proyecciones 
+- cambio climático y alimentación  
+- estrategias de adaptación 
+- estrategias de mitigación  
+2- Sistemas alimentarios 
+- Políticas alimentarias 
+- Seguridad alimentaria 
+- Dietas saludables y sistemas alimentarios sostenibles 
+
+15.  Financiamiento de Startups
+Esta asignatura tiene como propósito introducir a los estudiantes en los principios y herramientas utilizadas para la evaluación de emprendimientos tecnológicos o startups en 
+fase de levantamiento de capital. Durante su desarrollo, se preparará un caso real de una startup (en áreas como: Fintech, Proptech, Agtech, Foodtech, HRtech, Smartcities, etc) en 
+proceso de ser evaluada para la toma de una decisión de inversión, el cual será discutido, iterado y presentado en un ambiente que simula una decisión real de inversión. Al finalizar 
+exitosamente la asignatura, los estudiantes estarán preparados tanto para poder presentar una startup a ser evaluada, como para analizar una decisión de inversión con 
+las lógicas y procesos utilizados por inversionistas profesionales en emprendimiento e innovación.
+Los contenidos fundamentales del curso son:
+ 1. Primer módulo: Venture deals
+ 1.1. Introducción al financiamiento con venture capital
+ 1.2. El juego del venture capital - 1 
+1.3. El juego del venture capital - 2 
+2. Segundo módulo: Preparación de la oferta de inversión
+ 2.1. Bloque 1: Oferta de inversión (hitos de negocio y aspectos financieros)
+ 2.2. Bloque 2: Oferta de inversión (espacio de mercado y estrategia de exit)
+ 2.3. Bloque 3: Oferta de inversión (instrumentos de inversión y aspectos legales)
+ 3. Tercer módulo: Roadshow y cierre del financiamiento
+ 3.1. Roadshow con inversionistas
+ 3.2. Cierre de la ronda y llamado de capital
+
+16. Generative Artificial Intelligence 
+Esta asignatura entrega fundamentos teóricos y prácticos para comprender, aplicar y evaluar modelos de lenguaje de gran escala (LLMs). Dichos modelos son la tecnología 
+detrás de herramientas como ChatGPT, Gemini y Claude. A través de ejercicios prácticos, este curso aborda cómo los LLMs funcionan y su uso para la generación automatizada de 
+texto, construcción de asistentes conversacionales, generación de código y síntesis de conocimiento, entre otras aplicaciones. El curso está orientado a estudiantes que deseen 
+complementar su formación en ciencia de datos con capacidades de diseño, evaluación y aplicación de soluciones basadas en modelos generativos. Se imparte en inglés, con tutorías en español.
+Contenidos:
+- Introducción a los modelos de lenguaje grande 
+- Tokens y embeddings
+- Large Language Models (LLMs) 
+- Ingeniería de prompts
+- Búsqueda semántica y RAG 
+- Fine-Tuning Generation Models 
+- plicaciones de IA generativa
+- Consideraciones éticas en IA generativa
+
+
+17. Gestión Ambiental
+Asignatura teórico-práctica que tiene por objetivo que el estudiante comprenda los factores que inciden en los problemas ambientales contemporáneos y los aspectos conceptuales de la Gestión Ambiental, incluyendo los diversos instrumentos de la gestión ambiental. La asignatura entrega competencias y conocimientos para entender y aplicar herramientas de gestión ambiental en diversas situaciones del ámbito de las ciencias de la Ingeniería, integrando estos aspectos en la toma de decisiones. Contenidos: Problemas Ambientales Contemporáneos: Orígenes de la contaminación, desafíos de los problemas ambientales actuales, el dilema de los recursos comunes y los desafíos de la industria en materia ambiental.
+- Fuentes y actividades que generan contaminación al ambiente: Contaminación hídrica, del suelo y del aire; cambio climático, causas, impactos y mitigación. 
+- Gestión Ambiental: Marco normativo ambiental e instrumentos de gestión ambiental. Sistema de evaluación ambiental de proyectos de inversión, educación ambiental, normas de calidad y emisión, planes de descontaminación y/o prevención.
+- Instrumentos Económicos en la Gestión Ambiental: Impuestos, tarifas por emisión, concepto de depósitos y reembolsos, permisos transables de emisión, subsidios. 
+- Control de emisiones de sustancias al aire y agua. Tecnologías y sistemas de tratamiento y control. 
+- Gestión Ambiental en la Industria: Conceptos básicos. Sistemas de gestión ambiental, modelo de gestión ambiental ISO 14001.
+ 
+18. Introducción a los Sistemas Inteligentes de Producción 
+Desarrollar en el estudiante la capacidad de diseñar y aplicar Sistemas Inteligentes de Planificación y Control de la Producción que, apoyados en simulación basada en agentes (ABS), gemelos digitales y técnicas de 
+Inteligencia Artificial (aprendizaje automático y redes neuronales), doten a las organizaciones de flexibilidad, autonomía y capacidad de reacción frente a la dinámica competitiva de la economía global. 
+Contenidos:
+1. Ingeniería de Sistemas y Sistemas Inteligentes de Producción: Panorama de la evolución de los paradigmas de la Industria y Rol de la Inteligencia Artificial en la planificación y control de la producción. Formulación y Modelamiento de Sistemas de Producción Inteligentes. 
+2. Representación del Conocimiento y Técnicas de Inteligencia: Sistemas basados en reglas y marcos 
+(frameworks) de decisión, Lógica difusa y sistemas difusos aplicados a procesos industriales. 
+3. Modelado y Simulación Basados en Agentes: Construcción de gemelos digitales en NetLogo para líneas 
+y talleres productivos. Análisis de cuellos de botella y experimentación con políticas de scheduling. 
+4. Aprendizaje Automático y Redes Neuronales: Aplicación de Machine Learning (supervisado y por 
+refuerzo) al modelado y optimización de procesos productivos. Diseño de redes neuronales y evaluación 
+de modelos explicables (XAI) para la toma de decisiones autónoma. 
+
+
+19.Simulation-based analytics in engineering systems:
+Asignatura cuyo objetivo se centra en la integración de modelos de simulación (eventos discretos y basados en agentes) con técnicas complementarias de Investigación de Operaciones, 
+como la optimización, machine learning y la modelación estadística. Se enfatiza la modelación de sistemas complejos y el desarrollo de modelos híbridos que permitan mejorar la toma de decisiones en contextos inciertos y dinámicos. 
+Contenidos:
+1. Fundamentals of agent-based simulation and system dynamics 
+2. Simulation-optimization: Integration of simulation with metaheuristics and surrogate models for optimization 
+3. Hybrid models I: Integration of simulation with linear and integer optimization 
+4. Hybrid models II: Integration of simulation with machine learning 
+
+
+20. Taller de Gestión de Operaciones
+El curso se desarrolla en base al trabajo en grupos de 3 estudiantes organizados como un equipo de proyecto, designando de entre sus integrantes un jefe de proyecto y un secretario ejecutivo. 
+El grupo define un problema relacionado con la gestión de operaciones de un sistema de producción de bienes y/o servicios de una micro, pequeña o mediana empresa (mipyme) a resolver técnicamente durante el semestre. 
+En paralelo, el grupo debe realizar una investigación sobre un tema que define en relación con el problema analizado. 
+Las clases de los días lunes 11 y 18 de agosto se destinan a una introducción a conceptos de la gestión de operaciones orientada a la definición del proyecto a desarrollar por los estudiantes. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
