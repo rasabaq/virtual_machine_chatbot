@@ -4,5 +4,9 @@ langchain
 langchain-google-genai
 langchain-community
 faiss-cpu
-
+sentence-transformers
+huggingface-hub
+faiss-cpu
+torch              
 pydantic
+
