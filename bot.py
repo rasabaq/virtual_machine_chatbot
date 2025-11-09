@@ -10,12 +10,11 @@ load_dotenv()
 import discord
 from discord.ext import commands
 from langchain.memory import ConversationBufferWindowMemory
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
 from langchain.chains import RetrievalQA
 from langchain.tools.render import render_text_description
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.tools import Tool
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.agents import create_react_agent, AgentExecutor
@@ -39,11 +38,11 @@ docmm = loader1.load()
 docpp = loader2.load()
 docelec = loader3.load()
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL_NAME = "models/embedding-001"
 RETRIEVER_SEARCH_K = 3  # reduce fetched docs per herramienta para respuestas mas rapidas
 MEMORY_WINDOW_MESSAGES = 3  # limita historial enviado al modelo manteniendo contexto reciente
 
-emb = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+emb = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL_NAME, google_api_key=GOOGLE_API_KEY)
 vectorMM = FAISS.from_documents(docmm, emb)
 vectorPP = FAISS.from_documents(docpp, emb)
 vectorEE = FAISS.from_documents(docelec, emb)
