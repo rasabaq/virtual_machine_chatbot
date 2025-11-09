@@ -1,9 +1,9 @@
 discord.py
 python-dotenv
-langchain
+langchain>=0.2.15
 langchain-core
 langchain-google-genai
-langchain-community
+langchain-community>=0.2.0
 faiss-cpu
 pydantic
 
