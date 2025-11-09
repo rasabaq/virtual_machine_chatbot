@@ -9,7 +9,11 @@ load_dotenv()
 
 import discord
 from discord.ext import commands
-from langchain.memory import ConversationBufferWindowMemory
+try:
+    from langchain.memory import ConversationBufferWindowMemory
+except ImportError:
+    # langchain>=0.3 reorganized memory utilities under langchain_core
+    from langchain_core.memory import ConversationBufferWindowMemory
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import TextLoader
