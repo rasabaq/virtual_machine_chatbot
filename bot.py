@@ -9,10 +9,10 @@ load_dotenv()
 
 import discord
 from discord.ext import commands
+# ConversationBufferWindowMemory moved across langchain versions; import whichever exists
 try:
     from langchain.memory import ConversationBufferWindowMemory
-except ImportError:
-    # langchain>=0.3 reorganized memory utilities under langchain_core
+except ImportError:  # pragma: no cover - fallback for older langchain
     from langchain_core.memory import ConversationBufferWindowMemory
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
