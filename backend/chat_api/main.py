@@ -1,4 +1,6 @@
 import os
+import logging
+import time
 import django
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -8,6 +10,13 @@ from typing import List, Optional
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from pathlib import Path
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 # Initialize Django environment
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
@@ -48,7 +57,9 @@ security = HTTPBearer()
 # Initialize RAG on startup
 @app.on_event("startup")
 async def startup_event():
+    logger.info("[STARTUP] Initializing RAG system...")
     rag_system.initialize()
+    logger.info("[STARTUP] RAG system initialized successfully")
 
 
 # --- Helper Functions ---
@@ -154,9 +165,11 @@ class ChatResponse(BaseModel):
 
 @app.post("/api/auth/register", response_model=AuthResponse)
 async def register(req: RegisterRequest):
+    logger.info(f"[AUTH] Registration attempt for email: {req.email}")
     # Check if user exists
     exists = await sync_to_async(User.objects.filter(email=req.email).exists)()
     if exists:
+        logger.warning(f"[AUTH] Registration failed - email already exists: {req.email}")
         raise HTTPException(status_code=400, detail="Email already registered")
 
     # Create user
@@ -168,6 +181,7 @@ async def register(req: RegisterRequest):
     )
 
     token = create_access_token(user.id)
+    logger.info(f"[AUTH] User registered successfully: {user.id} ({user.email})")
     return AuthResponse(
         user_id=user.id,
         email=user.email,
@@ -178,15 +192,19 @@ async def register(req: RegisterRequest):
 
 @app.post("/api/auth/login", response_model=AuthResponse)
 async def login(req: LoginRequest):
+    logger.info(f"[AUTH] Login attempt for email: {req.email}")
     try:
         user = await sync_to_async(User.objects.get)(email=req.email)
     except User.DoesNotExist:
+        logger.warning(f"[AUTH] Login failed - user not found: {req.email}")
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
     if not verify_password(req.password, user.password):
+        logger.warning(f"[AUTH] Login failed - invalid password for: {req.email}")
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
     token = create_access_token(user.id)
+    logger.info(f"[AUTH] User logged in successfully: {user.id} ({user.email})")
     return AuthResponse(
         user_id=user.id,
         email=user.email,
@@ -304,15 +322,21 @@ async def chat_endpoint(
     req: ChatRequest,
     current_user: User = Depends(get_current_user)
 ):
+    start_time = time.time()
+    logger.info(f"[CHAT] User {current_user.id} ({current_user.email}) - New request")
+    logger.info(f"[CHAT] Message: {req.message[:100]}{'...' if len(req.message) > 100 else ''}")
+
     try:
         # Get or create conversation
         if req.conversation_id:
+            logger.info(f"[CHAT] Using existing conversation: {req.conversation_id}")
             try:
                 conversation = await sync_to_async(Conversation.objects.get)(
                     id=req.conversation_id,
                     user=current_user
                 )
             except Conversation.DoesNotExist:
+                logger.warning(f"[CHAT] Conversation {req.conversation_id} not found for user {current_user.id}")
                 raise HTTPException(status_code=404, detail="Conversation not found")
         else:
             # Create new conversation with title from first message
@@ -321,6 +345,7 @@ async def chat_endpoint(
                 user=current_user,
                 title=title
             )
+            logger.info(f"[CHAT] Created new conversation: {conversation.id}")
 
         # Save user message
         user_message = await sync_to_async(Message.objects.create)(
@@ -328,11 +353,16 @@ async def chat_endpoint(
             role='user',
             content=req.message
         )
+        logger.info(f"[CHAT] Saved user message: {user_message.id}")
 
         # Get agent response
+        logger.info(f"[CHAT] Invoking agent for user {current_user.id}")
+        agent_start = time.time()
         executor = get_executor(current_user.id)
         raw_output = await executor.invoke(req.message)
         final_answer = raw_output.strip()
+        agent_duration = time.time() - agent_start
+        logger.info(f"[CHAT] Agent response received in {agent_duration:.2f}s - Length: {len(final_answer)} chars")
 
         # Save assistant message
         assistant_message = await sync_to_async(Message.objects.create)(
@@ -340,10 +370,14 @@ async def chat_endpoint(
             role='assistant',
             content=final_answer
         )
+        logger.info(f"[CHAT] Saved assistant message: {assistant_message.id}")
 
         # Update conversation timestamp
         conversation.updated_at = datetime.now()
         await sync_to_async(conversation.save)()
+
+        total_duration = time.time() - start_time
+        logger.info(f"[CHAT] Request completed in {total_duration:.2f}s - Conversation: {conversation.id}")
 
         return ChatResponse(
             response=final_answer,
@@ -355,9 +389,7 @@ async def chat_endpoint(
     except HTTPException:
         raise
     except Exception as e:
-        import traceback
-        traceback.print_exc()
-        print(f"CRITICAL ERROR in /api/chat: {e}")
+        logger.exception(f"[CHAT] Critical error processing request for user {current_user.id}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 

@@ -12,14 +12,21 @@ SYSTEM_PROMPT = """Eres un asistente virtual especializado en reglamentos de la 
 - Memoria de Título
 - Práctica Profesional
 - Electivos
-- Reglamento Interno de Docencia de Pregrado (inscripción de asignaturas, calificaciones, continuación de estudios, cambios de carrera, convalidaciones, suspensión/reincorporación, graduación y titulación)
+- Reglamento Interno de Docencia de Pregrado
 
 INSTRUCCIONES:
-1. Si el usuario saluda o hace small talk, responde brevemente y cordialmente.
-2. Si pregunta sobre los temas anteriores, usa el CONTEXTO proporcionado para responder.
-3. Si la pregunta no está en tu ámbito, responde: "Lo siento, no estoy capacitado para responder preguntas fuera del ámbito de la memoria de título, la práctica profesional, electivos y el reglamento interno de docencia."
-4. Sé detallado pero claro, con tono cordial.
-5. Máximo 1800 caracteres en tu respuesta.
+1. Si el usuario saluda o hace small talk, responde brevemente (1-2 oraciones).
+2. Si pregunta sobre los temas anteriores, usa el CONTEXTO para dar una respuesta CONCISA y directa.
+3. Si la pregunta no está en tu ámbito, responde: "Lo siento, no estoy capacitado para responder esa pregunta."
+4. Sé breve y directo. Evita explicaciones innecesarias o redundantes.
+5. Usa viñetas o listas cuando sea apropiado para mayor claridad.
+6. Máximo 800 caracteres en tu respuesta.
+
+RESTRICCIONES IMPORTANTES:
+- NUNCA ofrezcas hacer tareas por el usuario (redactar documentos, preparar borradores, escribir correos, verificar formularios, etc.).
+- Tu único rol es INFORMAR sobre los reglamentos, NO ejecutar tareas.
+- No preguntes datos personales como nombre del Guía, tema de tesis, etc.
+- Termina tu respuesta después de dar la información solicitada, sin ofrecer ayuda adicional.
 
 CONTEXTO RELEVANTE:
 {context}
@@ -64,35 +71,42 @@ class SimpleAgent:
         )
     
     async def invoke(self, question: str) -> str:
+        logger.info(f"[AGENT] Processing question: {question[:80]}{'...' if len(question) > 80 else ''}")
+
         # Step 1: Classify the question (1 API call)
         try:
             category = await self.classifier_chain.ainvoke({"question": question})
             category = category.strip().lower()
-            logger.info(f"Question classified as: {category}")
+            logger.info(f"[AGENT] Step 1 - Classification: {category}")
         except Exception as e:
-            logger.error(f"Classification failed: {e}")
+            logger.error(f"[AGENT] Step 1 - Classification failed: {e}")
             category = "none"
-        
+
         # Step 2: Get RAG context if needed (uses cached embeddings)
         context = ""
         if category in ["thesis", "internship", "electives", "regulations"]:
             try:
+                logger.info(f"[AGENT] Step 2 - Retrieving RAG context for category: {category}")
                 context = rag_system.query(category, question)
+                logger.info(f"[AGENT] Step 2 - RAG context retrieved: {len(context)} chars")
             except Exception as e:
-                logger.error(f"RAG query failed: {e}")
+                logger.error(f"[AGENT] Step 2 - RAG query failed: {e}")
                 context = "No se pudo obtener información relevante."
         else:
+            logger.info(f"[AGENT] Step 2 - Skipping RAG (category: {category})")
             context = "No se requiere contexto específico para esta consulta."
-        
+
         # Step 3: Generate response (1 API call)
         try:
+            logger.info("[AGENT] Step 3 - Generating response...")
             response = await self.response_chain.ainvoke({
                 "context": context,
                 "question": question
             })
+            logger.info(f"[AGENT] Step 3 - Response generated: {len(response)} chars")
             return response
         except Exception as e:
-            logger.error(f"Response generation failed: {e}")
+            logger.error(f"[AGENT] Step 3 - Response generation failed: {e}")
             return f"Error al generar respuesta: {e}"
 
 
