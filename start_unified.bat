@@ -10,6 +10,6 @@ call npx -y concurrently ^
   --kill-others ^
   "cd backend && python manage.py runserver 8000" ^
   "cd backend && uvicorn chat_api.main:app --reload --port 8001" ^
-  "cd frontend && npm run dev"
+  "cd frontend && npm install && npm run dev"
 
 pause
