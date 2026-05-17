@@ -70,7 +70,7 @@ class SimpleAgent:
             | StrOutputParser()
         )
     
-    async def invoke(self, question: str) -> str:
+    async def invoke(self, question: str, history: list = []) -> str:
         logger.info(f"[AGENT] Processing question: {question[:80]}{'...' if len(question) > 80 else ''}")
 
         # Step 1: Classify the question (1 API call)
@@ -99,9 +99,20 @@ class SimpleAgent:
         # Step 3: Generate response (1 API call)
         try:
             logger.info("[AGENT] Step 3 - Generating response...")
+            messages = [("system", SYSTEM_PROMPT)]
+            for msg in history[:-1]:  # excluye el último que es el mensaje actual
+                messages.append((msg["role"], msg["content"]))
+            messages.append(("human", "{question}"))
+
+            self.response_chain = (
+                ChatPromptTemplate.from_messages(messages)
+                | self.llm
+                | StrOutputParser()
+            )
+
             response = await self.response_chain.ainvoke({
-                "context": context,
-                "question": question
+            "context": context,
+            "question": question
             })
             logger.info(f"[AGENT] Step 3 - Response generated: {len(response)} chars")
             return response
