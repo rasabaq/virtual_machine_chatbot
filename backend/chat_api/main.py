@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,

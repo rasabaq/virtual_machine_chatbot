@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from langchain_community.document_loaders import TextLoader
-from langchain_openai import OpenAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from django.conf import settings
 import logging
@@ -21,9 +21,9 @@ class RAGSystem:
         if self.initialized:
             return
 
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = os.getenv("GOOGLE_API_KEY")
         if not api_key:
-            logger.warning("OPENAI_API_KEY not found. RAG functionality will be limited.")
+            logger.warning("GOOGLE_API_KEY not found. RAG functionality will be limited.")
             return
 
         # Define paths
@@ -31,7 +31,10 @@ class RAGSystem:
         cache_dir = settings.BASE_DIR / "faiss_cache"
         cache_dir.mkdir(exist_ok=True)
 
-        self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small", api_key=api_key)
+        self.embeddings = GoogleGenerativeAIEmbeddings(
+            model="models/gemini-embedding-001",
+            google_api_key=api_key,
+        )
         self.retrievers = {}
 
         categories = {

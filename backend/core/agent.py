@@ -1,6 +1,6 @@
 import os
 import logging
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -46,13 +46,13 @@ Responde SOLO con una palabra: thesis, internship, electives, regulations, o non
 
 class SimpleAgent:
     def __init__(self):
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = os.getenv("GOOGLE_API_KEY")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable not set")
+            raise ValueError("GOOGLE_API_KEY environment variable not set")
 
-        self.llm = ChatOpenAI(
-            model="gpt-5-nano",
-            api_key=api_key,
+        self.llm = ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",
+            google_api_key=api_key,
         )
         
         self.classifier_chain = (
