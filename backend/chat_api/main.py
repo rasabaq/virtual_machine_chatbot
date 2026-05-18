@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -359,7 +361,11 @@ async def chat_endpoint(
         logger.info(f"[CHAT] Invoking agent for user {current_user.id}")
         agent_start = time.time()
         executor = get_executor(current_user.id)
-        raw_output = await executor.invoke(req.message)
+        messages_history = await sync_to_async(list)(
+            conversation.messages.exclude(id=user_message.id).order_by('created_at')
+        )
+        history = [{"role": m.role, "content": m.content} for m in messages_history]
+        raw_output = await executor.invoke(req.message, history)
         final_answer = raw_output.strip()
         agent_duration = time.time() - agent_start
         logger.info(f"[CHAT] Agent response received in {agent_duration:.2f}s - Length: {len(final_answer)} chars")
