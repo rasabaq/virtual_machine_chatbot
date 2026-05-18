@@ -16,33 +16,33 @@ SYSTEM_PROMPT = """Eres un asistente virtual especializado en reglamentos de la 
 
 INSTRUCCIONES:
 1. Si el usuario saluda o hace small talk, responde brevemente (1-2 oraciones).
-2. Si pregunta sobre los temas anteriores, usa el CONTEXTO para dar una respuesta CONCISA y directa.
-3. Si la pregunta no está en tu ámbito, responde: "Lo siento, no estoy capacitado para responder esa pregunta."
-4. Sé breve y directo. Evita explicaciones innecesarias o redundantes.
-5. Usa viñetas o listas cuando sea apropiado para mayor claridad.
-6. Máximo 800 caracteres en tu respuesta.
+2. Si pregunta sobre los temas anteriores, usa el CONTEXTO para dar una respuesta concisa y directa.
+3. Si la información no está en el CONTEXTO, responde: "No encontré esa información en los reglamentos disponibles."
+4. Usa viñetas cuando sea apropiado para mayor claridad.
 
-RESTRICCIONES IMPORTANTES:
-- NUNCA ofrezcas hacer tareas por el usuario (redactar documentos, preparar borradores, escribir correos, verificar formularios, etc.).
-- Tu único rol es INFORMAR sobre los reglamentos, NO ejecutar tareas.
-- No preguntes datos personales como nombre del Guía, tema de tesis, etc.
-- Termina tu respuesta después de dar la información solicitada, sin ofrecer ayuda adicional.
+RESTRICCIONES:
+- NUNCA ofrezcas redactar documentos, borradores o correos.
+- Tu rol es INFORMAR sobre reglamentos, NO ejecutar tareas.
+- No pidas datos personales.
 
 CONTEXTO RELEVANTE:
 {context}
 """
 
-CLASSIFIER_PROMPT = """Clasifica la siguiente pregunta en una de estas categorías:
-- thesis: si es sobre memoria de título
-- internship: si es sobre práctica profesional
-- electives: si es sobre electivos/asignaturas electivas
-- regulations: si es sobre reglamento interno de docencia, inscripción de asignaturas, calificaciones, aprobación, créditos, baja académica, continuación de estudios, cambio de carrera, ingreso especial, convalidación, revalidación, suspensión, renuncia, reincorporación, graduación o titulación
-- none: si es saludo, small talk, o tema no relacionado
+# El clasificador ahora maneja preguntas mixtas mejor
+CLASSIFIER_PROMPT = """Clasifica la siguiente pregunta. Si toca VARIOS temas, elige el más relevante.
+
+Categorías:
+- thesis: memoria de título, proyecto de título, informe de memoria
+- internship: práctica profesional, práctica industrial
+- electives: electivos, asignaturas optativas, ramos optativos
+- regulations: inscripción, calificaciones, créditos, baja académica, convalidación, 
+               graduación, titulación, reglamento de docencia, suspensión, reincorporación
+- none: saludo, small talk, temas no relacionados con los reglamentos
 
 Pregunta: {question}
 
-Responde SOLO con una palabra: thesis, internship, electives, regulations, o none."""
-
+Responde SOLO con una palabra."""
 
 class SimpleAgent:
     def __init__(self):
@@ -54,71 +54,68 @@ class SimpleAgent:
             model="gemini-2.5-flash",
             google_api_key=api_key,
         )
-        
+
         self.classifier_chain = (
             ChatPromptTemplate.from_template(CLASSIFIER_PROMPT)
             | self.llm
             | StrOutputParser()
         )
-        
-        self.response_chain = (
-            ChatPromptTemplate.from_messages([
-                ("system", SYSTEM_PROMPT),
-                ("human", "{question}")
-            ])
-            | self.llm
-            | StrOutputParser()
-        )
-    
-    async def invoke(self, question: str, history: list = []) -> str:
-        logger.info(f"[AGENT] Processing question: {question[:80]}{'...' if len(question) > 80 else ''}")
 
-        # Step 1: Classify the question (1 API call)
+    async def invoke(self, question: str, history: list = []) -> str:
+        logger.info(f"[AGENT] Processing: {question[:80]}")
+
+        # Paso 1: Clasificar
         try:
             category = await self.classifier_chain.ainvoke({"question": question})
             category = category.strip().lower()
-            logger.info(f"[AGENT] Step 1 - Classification: {category}")
+            # Sanity check por si el modelo devuelve texto extra
+            valid = {"thesis", "internship", "electives", "regulations", "none"}
+            if category not in valid:
+                category = "none"
+            logger.info(f"[AGENT] Category: {category}")
         except Exception as e:
-            logger.error(f"[AGENT] Step 1 - Classification failed: {e}")
+            logger.error(f"[AGENT] Classification failed: {e}")
             category = "none"
 
-        # Step 2: Get RAG context if needed (uses cached embeddings)
-        context = ""
-        if category in ["thesis", "internship", "electives", "regulations"]:
+        # Paso 2: Obtener contexto RAG
+        context = "No se requiere contexto para esta consulta."
+        if category != "none":
             try:
-                logger.info(f"[AGENT] Step 2 - Retrieving RAG context for category: {category}")
                 context = rag_system.query(category, question)
-                logger.info(f"[AGENT] Step 2 - RAG context retrieved: {len(context)} chars")
+                logger.info(f"[AGENT] RAG context: {len(context)} chars")
             except Exception as e:
-                logger.error(f"[AGENT] Step 2 - RAG query failed: {e}")
+                logger.error(f"[AGENT] RAG failed: {e}")
                 context = "No se pudo obtener información relevante."
-        else:
-            logger.info(f"[AGENT] Step 2 - Skipping RAG (category: {category})")
-            context = "No se requiere contexto específico para esta consulta."
 
-        # Step 3: Generate response (1 API call)
+        # Paso 3: Construir mensajes con historial
+        # El system prompt va primero con el contexto ya formateado
+        messages = [
+            ("system", SYSTEM_PROMPT.format(context=context))
+        ]
+
+        # Agregar historial previo (ya viene sin el mensaje actual gracias al fix en main.py)
+        for msg in history:
+            role = "human" if msg["role"] == "user" else "assistant"
+            messages.append((role, msg["content"]))
+
+        # Agregar pregunta actual
+        messages.append(("human", question))
+
+        # Paso 4: Generar respuesta con chain local (no sobreescribe self)
         try:
-            logger.info("[AGENT] Step 3 - Generating response...")
-            messages = [("system", SYSTEM_PROMPT)]
-            for msg in history[:-1]:  # excluye el último que es el mensaje actual
-                messages.append((msg["role"], msg["content"]))
-            messages.append(("human", "{question}"))
-
-            self.response_chain = (
+            response_chain = (
                 ChatPromptTemplate.from_messages(messages)
                 | self.llm
                 | StrOutputParser()
             )
-
-            response = await self.response_chain.ainvoke({
-            "context": context,
-            "question": question
-            })
-            logger.info(f"[AGENT] Step 3 - Response generated: {len(response)} chars")
+            # No necesita variables porque el system ya está formateado
+            response = await response_chain.ainvoke({})
+            logger.info(f"[AGENT] Response: {len(response)} chars")
             return response
         except Exception as e:
-            logger.error(f"[AGENT] Step 3 - Response generation failed: {e}")
+            logger.error(f"[AGENT] Response failed: {e}")
             return f"Error al generar respuesta: {e}"
+
 
 
 def create_agent_executor():

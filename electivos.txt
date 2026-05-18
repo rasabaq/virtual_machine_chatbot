@@ -208,31 +208,420 @@ El grupo define un problema relacionado con la gestión de operaciones de un sis
 En paralelo, el grupo debe realizar una investigación sobre un tema que define en relación con el problema analizado. 
 Las clases de los días lunes 11 y 18 de agosto se destinan a una introducción a conceptos de la gestión de operaciones orientada a la definición del proyecto a desarrollar por los estudiantes. 
 
+21. GESTIÓN EN SALUD
+Esta asignatura pretende entregar al estudiante conocimiento sobre: los sistemas de salud 
+y las instituciones que participan en él, la terminología de salud, costos en salud, demanda 
+de servicios sanitarios y seguridad del paciente, entre otros. Así como: competencias y 
+capacidades para la gestión viable de instituciones y proyectos en salud. 
 
+CONTENIDOS. 
+1. Sistema de salud chileno: descripción del origen de los sistemas de salud en el 
+mundo, el caso chileno (estructura, sus instituciones, financiamiento, principales 
+leyes, terminología básica). 
+2. Conceptos básicos de epidemiología: Fundamentos, prevalencia, incidencia, 
+morbilidad y otros indicadores importantes. 
+3. Gestión de la demanda en salud pública - privada: Elementos que inciden en la 
+demanda ambulatoria y hospitalaria (enfoque público, enfoque privado), principales 
+indicadores de gestión. 
+4. Gestión de costos en salud: Conceptos básicos de economía de la salud, arancel 
+de prestaciones de salud, paquetización de prestaciones, Grupos Relacionados de 
+Diagnóstico (GRD). 
+5. Gestión de seguros en salud: Aseguradoras de salud (FONASA, isapres), seguros 
+privados de salud. 
+6. Gestión de convenios en salud pública - privada: Tipos de convenios, estructura 
+de los contratos, negociación de convenios en salud. 
+7. Gestión de la calidad en salud: origen de la calidad en salud, seguridad del 
+paciente. 
+8. Gestión de servicios en salud pública - privada: el paciente como cliente, 
+atención médica, atención administrativa, conceptos básicos de atención en 
+servicios, reclamos en salud. 
+9. Gestión de proyectos en salud: proyectos de mejoras en salud, oportunidades de 
+negocios en salud, telemedicina y otras tendencias.
 
+22. : Cambio climático y gestión de gases de efecto invernadero
+Asignatura teórico-práctica que introduce al estudiante a los principales temas relacionados 
+al cambio climático, incluyendo las bases físicas, sus causas e impactos, estrategias de 
+adaptación y mitigación, además de los marcos legales nacionales e internacionales
+desarrollados para gestionar los gases de efecto invernadero. Los estudiantes adquirirán
+las herramientas necesarias para analizar y comprender los principales avances científicos, 
+políticos y sociales relacionados al cambio climático
 
+CONTENIDOS.
+1. Las bases físicas del cambio climático
+a. Introducción al cambio climático
+b. Componentes del sistema climático y efecto invernadero
+c. Ciclos biogeoquímicos
+d. Modelos climáticos
+e. Escenarios y proyecciones 
+2. Causas y efectos del cambio climático
+a. Emisiones de gases de efecto invernadero (GEI) por sectores productivos
+b. Combustibles fósiles y su uso actual y pasado
+c. Fuentes alternativas de energía
+d. Impactos del cambio climático en los recursos hídricos y ecosistemas, en 
+áreas urbanas y rurales y en sectores económicos clave, salud y pobreza
+e. Medidas de mitigación, adaptación y manejo de la vulnerabilidad.
+3. Organizaciones para el cambio climático
+a. El cambio climático como un problema de gobernanza nacional e 
+internacional
+b. Acuerdos internacionales (Paris, Rio, Kyoto)
+c. Legislación nacional
 
+23. Juegos de estrategia
+Juegos de estrategia es una asignatura teórico-práctica cuyo propósito es que, los y las estudiantes 
+desarrollen habilidades y adquieran herramientas para diseñar planes estratégicos, coherentes y 
+prácticos para ejecutar una estrategia de alto estándar en la organización, situándola como un 
+elemento estructural para su desarrollo. Esto, a través de la revisión de las diferentes escuelas, 
+paradigmas y metodologías para el desarrollo de la estrategia en las organizaciones y en cómo esta se 
+traduce en lineamientos e instrucciones para su implementación
 
+Contenidos.
+1. Principios de estrategia
+a. ¿De qué trata la estrategia?
+b. Historia de la estrategia de negocios.
+c. Profundizando en Porter: el arte del posicionamiento.
+d. Las competencias medulares y las ventajas competitivas dinámicas.
+e. El modelo Delta y los modelos de negocios.
+2. Implementando estrategias de negocios.
+a. El cuadro de mando integral I: las dimensiones de una organización.
+b. El cuadro de mando integral II: Proyectos y KPIs.
+c. El diamante de Hambrick: cómo ordenar la declaración de la estrategia.
+d. Océanos azules: innovación de valor.
+3. Propuesta estratégica y gestión del cambio.
+a. Compitiendo en la frontera.
+b. Reinventando las organizaciones.
+c. Objetivos y resultados clave.
 
+24. Evaluación social de proyectos y gestión pública
+Asignatura teórico-práctico cuyo propósito es que, los y las estudiantes de Ingeniería Civil Industrial
+adquieran habilidad en el manejo de los conceptos, enfoques, métodos y herramientas que se utilizan 
+en la formulación y evaluación de proyectos de inversión Social versus la privada. Para ello se 
+entregarán y enseñarán los fundamentos para la comprensión de los conceptos necesarios para la 
+formulación y evaluación social adecuada de un proyecto, basado en las metodologías utilizadas por 
+el Ministerio de Desarrollo Social y Familia (MIDESO y F) y la literatura existente.
+Del mismo modo a los y las estudiantes se les entregará información de la administración y gestión 
+de los organismos del Estado, con la finalidad de mejorar sus posibilidades laborales y potenciar las 
+profesionales, proporcionando una perspectiva global de las principales instituciones públicas y sus 
+respectivas funciones, con la finalidad de potenciar y liderar, desde los ámbitos tanto privados como 
+públicos, proyectos con un enfoque social.
+Contenidos.
+1. Introducción:
+Presentación de la Asignatura Calendario de Actividades Formación de grupos de trabajo
+2. Evaluación Social
+Fundamentos Repaso de Índices
+Introducción al concepto de Inversión Social de ProyectosArboles de Problemas y Árboles de
+Objetivos
+Variables de ajuste
+Precio Social de la mano de obraPrecio Social de la divisa
+Tasa social de descuentoValor Social del tiempo
+Costos Sociales de la inversiónBeneficios Sociales Netos
+Cálculo del VAN SocialRiesgo y Sensibilidad Ejemplos
+3. Administración y Gestión Pública del Estado
+Estado (Ministerios)
+Gobiernos Regionales 
+MIDESO y F
+Ministerio de Hacienda y CORFO 
+Municipios y PLADECO
 
+25. Evaluación de riesgos laborales y ambientales
+Asignatura teórico-práctica que tiene por objetivo que el estudiante comprenda los riesgos 
+laborales y ambientales en la industria. Incluye diversos instrumentos de análisis y 
+evaluación de riesgos laborales y ambientales de los principales sistemas de producción 
+nacional. Tiene como propósito el desarrollo de aprendizaje que permitan al estudiante 
+identificar, analizar, caracterizar e interpretar riegos laborales y ambientales de origen 
+natural y antrópicos, así como la aplicación de herramientas para realizar análisis de riesgos 
+laborales e impactos ambientales del sector industrial con el propósito de mitigar los riesgos 
+e impactos del sector.
 
+Contenidos.
+− Problemas Ambientales Contemporáneos: Orígenes de la contaminación, desafíos de los 
+problemas ambientales actuales, el dilema de los recursos comunes y los desafíos de la industria 
+en materia ambiental.
+− Fuentes de riesgos laborales y ambientales en la industria.
+− Marco normativo ambiental y riesgos laborales en la industria: Ley 19300, normativa laboral D.S. 
+594, etc.
+− Herramientas para evaluar brechas laborales y ambientales: Matrices de Leopold, William Fine, 
+etc.
+− Brechas y oportunidades de mejora en materia de indicadores de desempeño ambiental y laboral 
+de la organización 
+− Gestión Ambiental y Riesgos Laborales en la Industria: Conceptos básicos. Sistemas de Gestión 
+Ambiental, Sistemas de Gestión de Riesgos Laborales y Salud Ocupacional
 
+ 26. Understanding consumer behavior through discrete choice models
+El análisis econométrico de modelos de elección discreta es usado en diversos campos (incluido 
+marketing o el área comercial de empresas) para modelar la demanda por bienes y servicios. En este 
+curso, el estudiantado adquirirá herramientas para entender las decisiones de los consumidores en 
+casos tales como:
+Decidir si adoptar una nueva tecnología (instalar paneles solares en un hogar, comprar un automóvil 
+eléctrico/autónomo, suscribirse a un servicio, comprar la membresía a un específico grupo o 
+aplicación, etc.).
+Elegir cuál producto se comprará para satisfacer una necesidad en específico (marca/modelo 
+automóvil, hogar a arrendar/comprar, marca/modelo de teléfono móvil, modo de transporte para 
+viajar al trabajo, destino de vacaciones, etc.)
+Elegir una alternativa dentro de diferentes niveles ordenados (rating de una película o producto, 
+evaluaciones a un servicio, frecuencia de uso de un servicio, nivel de aprobación de figuras públicas, 
+etc.).
+El estudiantado podrá usar estas herramientas para entender los atributos de los productos o servicios 
+que el consumidor considera en su elección, identificar las características del consumidor que son 
+relevantes para la decisión y además predecir el comportamiento del consumidor frente a distintos 
+escenarios o modificaciones del producto/servicio.
+El curso presenta enfoques econométricos de modelación (basados principalmente en la 
+maximización de la verosimilitud) que permitirán desarrollar guías para la formulación y estimación 
+de modelos de elección/comportamiento (basados en maximización de la utilidad del consumidor) y 
+usarlos en el diseño de productos y servicios, marketing y predicción. Problemas prácticos (usando 
+software econométrico de libre acceso R) serán resueltos por los y las estudiantes para ganar 
+familiaridad con los modelos presentados en clases y experiencia en análisis de datos de casos reales.
 
+27. Stakeholder management
+Asignatura teórico-práctica donde se estudia herramientas y marcos teóricos para gestionar 
+stakeholders en proyectos y organizaciones. Se focaliza en la escritura efectiva para generar informes 
+y comunicarse con una variedad de stakeholders, desde accionistas y gerentes corporativos hasta la 
+comunidad y los medios de comunicación. Se imparte en inglés, el material de estudio es en inglés, 
+pero las evaluaciones y tareas se pueden presentar en español o inglés. No se requiere que los y las
+estudiantes tengan un nivel de inglés experto, solo un nivel razonable para poder escuchar las clases, 
+las cuales están diseñadas con un apoyo visual adicional para una mejor comprensión
 
+Contenidos.
+1. Escritura efectiva: estructura de informes y reportes a nivel de documento, sección, párrafo y 
+oración.
+2. Argumentación y reuniones efectivas: Razonamiento lógico, falacias lógicas, estructura de 
+argumentos, estructura de reuniones efectivas.
+3. Evaluación de desempeño y auditoria de Proyectos: Modelo de revisión de proyectos NalewaikMills, gateway review system, estrategias de evaluación de impacto, modelo piramidal para 
+evaluar éxito de un proyecto.
+4. Gestión de stakeholders: Introducción y definiciones. tipos de stakeholders. herramientas de 
+identificación y análisis de stakeholders. Herramientas para comprometer y gestionar 
+stakeholders.
+5. Gestión del Valor: Teoría del valor, análisis de valor (value análisis), estudios de valor (value 
+studies), valor por dinero (Value for Money), valor por dinero en alianzas público-privadas.
 
+28. Influencia y dirección organizacional
+Asignatura teórico-práctica que busca profundizar en aspectos de la psicología individual y social que 
+son indispensables para dirigir e influir positivamente en las organizaciones de modo que logren un 
+mejor funcionamiento. Se proporcionarán las teorías más importantes, evidencias y ejemplos de casos 
+que permitan diseñar formas para conducir los fenómenos individuales y colectivos que influyen 
+sobre los procesos organizacionales. Se espera que las y los estudiantes adquieran conocimientos y 
+habilidades que les permitan ayudar a una conducción más sana y efectiva de las organizaciones en 
+las que se incorporen.
 
+Contenidos.
+1. Influencia
+• Influencia y poder 
+• Liderazgo y equipos
+2. Conducir los motivos
+• Teorías y modelos actuales de motivación
+• Evidencias ¿qué funciona y para qué?
+3. Conducir el conflicto
+• El proceso del conflicto y factores que influyen
+• La negociación
+4. Conducir el aprendizaje
+• Las organizaciones como sistemas vivos
+• Aprendizaje organizacional en velocidad
 
+29. Data visualization
+La asignatura aborda fundamentos teóricos y prácticos relevantes en la creación eficiente de reportería 
+y visualizaciones a partir de conjuntos masivos de datos. Su finalidad es preparar a las y los 
+estudiantes en la construcción y evaluación de sistemas de visualización de datos, tanto en la industria 
+como la academia. Para esto, este electivo pone a disposición herramientas y teoría que enriquezcan 
+la formación profesional de estudiantes interesadas/os en prepararse en competencias afines a data 
+scientists. El curso será dictado en inglés y español, a convenir de acuerdo al tópico.
 
+Contenidos.
+1. Introducción
+a. Repaso conceptos básicos de Tecnologías de la Información y Bases de datos
+2. Tidy Data
+a. Principios de Tidy Data
+b. Conversión de datos a formato Tidy
+3. Extract, Transform, Load: ETL
+a. Principios de extracción, transformación y carga de datos
+b. Repaso del uso de bases de datos relacionales y no relacionales
+c. Buenas prácticas en limpieza de datos
+4. Ética y Gobernanza de Datos
+a. Ética y privacidad
+b. Anonimización de datos
+c. Política de manejo de datos organizacionales
+d. Introducción a gobernanza de datos públicos
+5. Introducción a la Visualización de Datos
+a. Tipología de gráficos
+b. Tipología de colores
+c. Accesibilidad y diseño UX/UI
+d. Descripción de tipos de gráficas
+e. Visualización de datos geoespaciales
+6. Tópicos de visualización de datos
+a. Introducción a la reportería 
+b. Creación de narrativa e integración de gráficas
 
+30. Gestión de Sistemas Energéticos en la Industria
+Desde los grandes hitos de las revoluciones industriales, la energía ha cumplido un rol 
+importante en la innovación industrial. Por su parte, el uso eficiente de la energía es crucial 
+para la competitividad y rentabilidad de las empresas. En esta asignatura tipo taller, se 
+estudiarán casos de estudio relacionados con la gestión energética en contextos 
+industriales tomados de la literatura científica más reciente disponible, en donde cada 
+estudiante integrará sus conocimientos de Ingeniería Industrial adquiridos para proponer 
+soluciones que apunten a resolverlos, así también aplicando criterios de mejora continua 
+conforme a los estándares internacionales de gestión energética.
 
+CONTENIDOS.
+1. Breve reseña histórica de la energía en la industria.
+2. Introducción a las tecnologías de generación energética.
+3. Contexto energético nacional (presentación del Balance Nacional de Energía).
+4. Sistemas de Gestión Energética (presentación de la Norma ISO 50001).
+5. Estudios de casos
 
+31. Data Analysis and Machine Learning
+La asignatura cubre conceptos, técnicas y metodologías que permiten al estudiantado extender sus 
+conocimientos estadísticos para el uso de métodos de análisis de datos en contextos aplicados de la 
+ingeniería. El propósito es que los estudiantes desarrollen habilidades que les permitan analizar data 
+real o simulada, a fin de contribuir a la evaluación de procesos y toma de decisión en las 
+organizaciones donde se desempeñaran una vez egresados.
 
+Contenidos.
+1. Introducción
+• Repaso conceptos básicos de estadística.
+• Mínimos cuadrados ordinarios.
+2. Modelos no-lineales
+• Regresión univariada Probit y Logit.
+• Regresión multivariada Probit y Logit. 
+• Datos de recuento y modelo Poisson. 
+3. Datos de Panel
+• Estructuras de datos, atrición y data incompleta.
+• Estrategias de imputación y balance de panel.
+• Modelos de regresión lineal
+4. Sistemas de ecuación estructural
+• Descomposición de varianza y Análisis de Componentes Principales.
+• Análisis factorial básico.
+• Clases observadas (grupos) y latentes.
+• Modelos longitudinales.
+5. Aprendizaje Automático
+• Modelos de clasificación. 
+• Modelos de predicción Lasso y Ridge.
+• Random Forest, Boosting, Support Vector Machine.
+• Redes Neuronales y Aprendizaje Profundo.
+• Aprendizaje por Reforzamiento. 
+6. Diseños experimentales
+• Diseño básico de Tratamiento versus Control.
+• Experimentos adaptativos
 
+32. Control de calidad y seis sigma
+La calidad es un factor clave en cualquier proceso de producción de bienes o servicios. En 
+esta asignatura se tratan los temas fundamentales sobre la gestión y el control de la calidad 
+de productos y/o servicios en una empresa. También se incluye los aspectos fundamentales 
+del enfoque de gestión de la calidad Seis Sigma.
+El objetivo general del curso es describir, analizar, desarrollar y aplicar los conceptos 
+básicos de gestión de la calidad; entregar los conceptos básicos sobre las herramientas 
+estadísticas para el mejoramiento continuo de la calidad, en el contexto de la metodología 
+Seis Sigma.
 
+Contenidos.
+1. Gestión de la calidad: Introducción; Definiciones de calidad; Gurúes de la calidad: 
+Deming, Juran, Crosby y Taguchi; Premios a la calidad; Normas ISO 9000:2008; 
+Despliegue de la función calidad (QFD); Calidad de servicio: SERVQUAL.
+2. Metodología Seis Sigma: Principios de Seis Sigma; Diseño para Seis Sigma; 
+Herramientas para las mejoras de los procesos; Control estadístico de procesos.
+3. Herramientas estadísticas para el mejoramiento de la calidad: Histogramas; 
+Diagramas de dispersión; Planilla de registro; Diagramas de causa efecto; Gráficos
+de Pareto; Diagramas de flujo; Gráficos de control.
+4. Control estadístico de la calidad: Fundamentos de gráficos de control; Repaso 
+sobre gráficos de control para variables; Gráficos de control para la mediana; 
+Gráficos de control especiales: CUSUM, promedios móviles, EWMA; Gráficos de 
+control multivariables.
+5. Capacidad de los procesos y sistemas de medición: Capacidad de los procesos; 
+Capacidad de los sistemas de medición; Análisis de repetibilidad y reproducibilidad 
+(R&R); Establecimientos de límites de especificación.
 
+33.  Procesos Estocásticos
+Muchas aplicaciones de la investigación de operaciones tienen relación con variables 
+aleatorias, como por ejemplo: demanda de un producto; duración de una componente 
+electrónica; tiempo entre fallas de equipos; número de barcos que llegan a un puerto a 
+requerir servicios; etc. El objetivo en este curso es capacitar a los estudiantes para la 
+aplicación adecuada de los conceptos de la teoría de la probabilidad al modelamiento de 
+problemas de decisión que involucran variables aleatorias. 
 
+CONTENIDOS
+1. Introducción del curso.
+2. Repaso de probabilidades.
+3. Cadenas de Markov discretas.
+4. Procesos de Poisson.
+5. Cadenas de Markov a tiempo continuo.
+6. Teoría de colas.
+7. Introducción a la simulación de eventos discretos
 
+34. Modelos de Gestión
+Esta asignatura prepara a los estudiantes en la gestión de organizaciones productivas 
+y de servicios del siglo 21, incorporando a sus conocimientos modelos clásicos y 
+modernos para la gestión de organizaciones y diversas herramientas de gestión junto a 
+los posibles efectos que éstas pueden tener en sus aplicaciones.
 
+CONTENIDOS
+1. Modelos clásicos de gestión
+-  Administración general
+-  Modelos de negocios
+2. Gestión Estratégica
+3. Gestión del Emprendimiento
+4. Liderazgo y equipos de trabajo
+5. Gestión Sustentable
+-  Perfiles de sustentabilidad organizacional
+-  ODS como guía para la gestión sustentable
+6. Gestión de proyectos
+7. Gestión del Cambio
+-  Crisis y gestión de crisis
+-  Resiliencia en las organizaciones
+-  Gestión de la innovación
+
+35. GESTION DE LA CADENA DE SUMNISTRO
+Una cadena de suministro está conformada por todas las partes destinadas a la satisfacción de las 
+necesidades del cliente. Comprende, además del fabricante y los proveedores, a los transportistas, 
+almacenes, vendedores y a los propios clientes. La gestión de la cadena de suministro consiste en la 
+planificación y administración de todas las funciones de desarrollo de nuevos productos, el marketing, 
+las operaciones, la distribución, las finanzas y el servicio al cliente. En esta asignatura teórica-práctica 
+se entregan las herramientas necesarias sobre los principales tópicos de la gestión de la cadena de
+suministro.
+CONTENIDOS
+ 1. Introducción: Cadena de suministro, desempeño y métricas, servicio al cliente en una cadena de 
+suministro.
+ 2. Pronósticos de demanda: Suavización exponencial y modelos ARIMA.
+ 3. Transporte y distribución: Selección del modo de transporte. Consolidación. 
+ 4. Decisiones de inventarios: Modelos determinísticos de inventarios. Economías de escala, 
+promociones comerciales, efectos de la agregación, determinación del nivel óptimo de disponibilidad 
+del producto. Modelos probabilísticos de inventarios.
+ 
+ 5. Gestión de almacenamiento y manejo de materiales. Diseño de almacenes, asignación de productos 
+a las ubicaciones, y otras decisiones operacionales.
+ 
+ 6. (Opcional de acuerdo a disponibilidad de tiempo) Diseño de la cadena de suministro: Localización 
+simultánea de plantas y almacenes. 
+
+36. Gestión sustentable
+Asignatura teórico-práctica que introduce al estudiantado al concepto de sustentabilidad para la
+tomade decisiones en el ámbito de la ingeniería. Los temas por tratar en este curso incluyen enfoques
+de actividades sociales, económicas y productivas con una mirada desde el punto de vista del
+desarrollo sustentable.
+Contenidos.
+− Introducción: Modelos de Desarrollo y Desarrollo Sustentable.
+− Crecimiento de la población: Sostenibilidad vs sustentabilidad, ética y enfoque adaptativo.
+− Crecimiento económico y desigualdad social: desafíos actuales en el desarrollo social de los 
+países.
+− Educación y capital humano: El rol de la educación e innovación en el desarrollo sustentable.
+− Industrialización y automatización: sistemas de producción limpios, sistemas logísticos 
+inteligentes.
+− Desarrollo urbano y contaminación: Desafíos de las grandes ciudades del mundo, ciudades 
+industriales vs medioambiente, políticas de desarrollo urbano.
+− Globalización y mercado verde: Efecto del mercado en la toma de decisiones.
+− Cambio Climático y huella del agua: Un desafío para el desarrollo actual y futuro.
+− Indicadores de Sustentabilidad.
+
+37. Sistemas de producción
+Asignatura que integra el proceso de planificación, programación y control operativo en sistemas 
+productivos (en manufactura y servicios), contribuyendo a desarrollar la capacidad de análisis y 
+diseño de soluciones a problemas del control operativo de sistemas de producción
+Contenidos.
+1 Sistemas de Producción: Definición y clasificación de sistemas.
+2 El Proceso de Planificación de Producción: Integración del proceso de planificación 
+con diferentes horizontes de tiempo (planificación agregada, programación maestra y 
+planificación de materiales).
+3 Programación y Control de Sistemas de Producción: Programación de sistemas de 
+una máquina, máquinas paralelas, (flexible) flowshop y (flexible) jobshop, utilizando 
+métodos clásicos, heurísticos y metaheurísticos.
+4 Simulación de Sistemas de Producción: Análisis del desempeño operativo de sistemas 
+de producción mediante simulación.
 
 
 
